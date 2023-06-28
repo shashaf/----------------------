@@ -1,0 +1,78 @@
+/* Общие стили */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  background-color: #f0f0f0;
+}
+
+.container {
+  text-align: center;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 20px;
+  width: 35%;
+}
+
+input[type="password"] {
+  margin-bottom: 10px;
+}
+
+input[type="text"] {
+  margin-bottom: 10px;
+  height: max-content;
+  font-size: 1.5em;
+  text-align: center;
+  width: 9ch;
+}
+
+#errorMessage {
+  color: red;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  white-space: pre-wrap;
+}
+
+#roomMessage {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 1.25em;
+}
+
+#findButton {
+  font-size: 1.5em;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#roomButtons {
+  display: none;
+}
+
+.YesNoButtons {
+  font-size: 1.25em;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  padding: 10px 20px;
+  margin: 10px;
+}
+
+
+.green-text {
+  color: green;
+}
+
+/* Медиа-запросы для мобильных устройств */
+@media only screen and (max-width: 480px) {
+  .container {
+    width: 80%;
+    max-width: 300px;
+  }
+
+  input[type="password"] {
+    width: 50%;
+  }
+
+  input[type="text"] {
+    width: 50%;
+  }
+}

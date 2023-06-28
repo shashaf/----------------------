@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Поиск папки по номеру</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="styleAuth.css">
+</head>
+<body>
+  <div class="container">
+    <h1 class="green-text">Введите номер папки, которую хотите найти</h1>
+    <input type="text" name="idDoc" id="idDocInput">
+    <button id="findButton" onclick="findRoomByDoc()">Найти</button>
+    <div id="roomMessage"></div>
+    <div id="roomButtons">
+      <button onclick='goToRoom()' class="YesNoButtons">Да</button>
+      <button onclick='DoNotGoToRoom()' class="YesNoButtons">Нет</button>
+    </div>
+  </div>
+  <script src="scriptOther.js"></script>
+</body>
+</html>

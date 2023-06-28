@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Главное меню</title>
+  <link rel="stylesheet" href="styleMenu.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+  <div class="menu-container">
+    <h1>Что вы хотите сделать?</h1>
+    <div class="menu-buttons">
+      <button onclick="navigateTo('findDoc.html')">Найти папку по номеру</button><br>
+      <div class="menu-dropdown">
+        <select onchange="navigateToRoom(this)">
+          <option selected disabled>Посмотреть помещение</option>
+          <option value="room1.html">7.1.16</option>
+          <option value="room2.html">5.1.2</option>
+          <option value="room3.html">Стекляшка</option>
+          <option value="room4.html">Комната 4</option>
+        </select>
+      </div><br>
+      <button onclick="navigateTo('moveDoc.html')">Переместить папку</button>
+    </div>
+  </div>
+
+  <script src="scriptMenu.js"></script>
+</body>
+</html>

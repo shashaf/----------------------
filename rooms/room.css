@@ -1,0 +1,157 @@
+@media (max-width: 1920px) {
+    h1{
+        font-size: 52px;
+        font-family: 'Times New Roman', Times, serif;
+        letter-spacing: 0.5px;
+    }
+    body{
+        padding:100px;
+    }
+    .locker{
+        border: 2px solid black;
+        border-radius: 10%;
+        margin: 0.5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 120px;
+        height: 120px;
+    }
+    
+    .container1 {
+        display: flex;
+        margin-block-end: 20px;
+    }
+    .container2 {
+        display: flex;
+        align-items: flex-end;
+        flex-direction: column;
+    }
+    .container3{
+        display: flex;
+        align-items:center;
+        flex-direction: column;
+        margin-top: 50px;
+    }
+    button {
+        background: green;
+        color: white;
+        border: none;
+        padding: 5px;
+        border-radius: 2px;
+        font-family: 'Times New Roman', Times, serif;
+        margin: 5px;
+        cursor: pointer;
+        outline: none;
+        height: 80px;
+        width: 200px;
+        font-size: 18px;
+    } 
+    button:hover {
+        background: rgb(68, 202, 243);
+    }
+    .tooltip-text, .tooltip-text2 {
+        display: none;
+    }
+  }
+
+  @media (max-width: 1280px) {
+    h1{
+        font-size: 40px;
+    }
+    body{
+        padding:90px;
+    }
+    .locker{
+        width: 80px;
+        height: 80px;
+    }
+  }
+
+  @media (max-width: 1020px) {
+    h1{
+        font-size: 28px;
+    }
+    body{
+        padding:60px;
+    }
+    .locker{
+        width: 60px;
+        height: 60px;
+    }
+  }
+
+  @media (max-width: 640px) {
+    h1{
+        font-size: 18px;
+        margin-left: 2px;
+    }
+    body{
+        padding: 0px;
+    }
+    .locker{
+        border: 2px solid black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: transparent;
+        width: 35px;
+        height: 35px;
+    }
+
+    .tooltip {
+        position: relative;
+        display: inline-block;
+        cursor: pointer;
+    }
+      
+    .tooltip:hover .tooltip-text {
+        visibility: visible;
+        opacity: 1;
+    }
+      
+    .tooltip-text {
+        display: flex;
+        visibility: hidden;
+        opacity: 0;
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: #000;
+        color: #fff;
+        padding: 8px;
+        border-radius: 4px;
+        transition: visibility 0.2s ease-in-out, opacity 0.2s ease-in-out;
+    } 
+    .tooltip-text2 {
+        display: flex;
+        visibility: hidden;
+        opacity: 0;
+        position: absolute;
+        top:-20%;
+        right: 20%;
+        transform: translateX(-50%);
+        background-color: #000;
+        color: #fff;
+        padding: 8px;
+        border-radius: 4px;
+        transition: visibility 0.2s ease-in-out, opacity 0.2s ease-in-out;
+    } 
+
+    button {
+        height: 40px;
+        width: 80px;
+        font-size: 12px;
+    }
+
+    .phone:hover .tooltip-text,
+    .phone.touch .tooltip-text,
+    .phone:hover .tooltip-text2,
+    .phone.touch .tooltip-text2 {
+        visibility: visible;
+        opacity: 1;
+    }
+
+}

@@ -1,0 +1,77 @@
+body {
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+h1 {
+  color: green;
+}
+
+.menu-container {
+  text-align: center;
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.menu-buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.menu-buttons button {
+  margin-bottom: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-width: 2px;
+  border-radius: 5px;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+.menu-buttons button:hover {
+  background-color: #4CAF50;
+  color: white;
+  cursor: pointer;
+}
+
+.menu-dropdown select {
+  margin: 0;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  background-color: #f0f0f0;
+  color: black;
+  border-radius: 5px;
+  cursor: pointer;
+  border-width: 2px;
+  border-style: outset;
+  border-color: buttonborder;
+  border-image: initial;
+}
+
+.menu-dropdown select:hover {
+  background-color: #45a049;
+}
+
+.menu-dropdown select:focus {
+  outline: none;
+}
+
+.menu-dropdown select option {
+  color: black;
+}
+
+/*@media only screen and (max-width: 480px) {
+  body {
+      align-content: space-around;
+      background-color: #f0f0f0 ;
+  }
+}*/
